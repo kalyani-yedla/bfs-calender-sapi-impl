@@ -39,20 +39,7 @@
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin> -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>2.5.2</version>
-			</plugin>
 			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.8.2</version>
-				<configuration>
-					<skip>false</skip>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -71,9 +58,8 @@
 						<!--  <authToken>c859eede-76c2-41c4-a056-8f9bed165137</authToken> -->
 						<businessGroupId>678ee431-6155-492a-8b2f-f3445e261724</businessGroupId>
 						 <connectedAppClientId>cd4d608addb24fbfa7222506692331f7</connectedAppClientId>
-					  <connectedAppClientSecret>9023010c7D254d7098cfB25fAb1848D5</connectedAppClientSecret>
-
-					<connectedAppGrantType>client_credentials</connectedAppGrantType>
+					 	 <connectedAppClientSecret>9023010c7D254d7098cfB25fAb1848D5</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
  
 					</cloudHubDeployment>
 
