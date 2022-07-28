@@ -48,7 +48,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.3.0</muleVersion>
+						<muleVersion>4.4.0</muleVersion>
 						<applicationName>bfs-calender-sapi-impl</applicationName>
 						<environment>Development</environment>
 						<workerType>MICRO</workerType>
