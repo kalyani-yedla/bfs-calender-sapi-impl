@@ -68,11 +68,11 @@
 						<region>us-east-2</region>
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
-						<!--  <authToken>c859eede-76c2-41c4-a056-8f9bed165137</authToken> -->
+						  <authToken>c859eede-76c2-41c4-a056-8f9bed165137</authToken> 
 						<businessGroupId>678ee431-6155-492a-8b2f-f3445e261724</businessGroupId>
-						 <connectedAppClientId>cd4d608addb24fbfa7222506692331f7</connectedAppClientId>
+						<!-- <connectedAppClientId>cd4d608addb24fbfa7222506692331f7</connectedAppClientId>
 						<connectedAppClientSecret>9023010c7D254d7098cfB25fAb1848D5</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType> -->
  
 					</cloudHubDeployment>
 
