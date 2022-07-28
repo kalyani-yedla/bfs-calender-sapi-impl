@@ -56,7 +56,7 @@
 						<region>us-east-2</region>
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
-						 <authToken>9640fde0-ea52-4985-8b8d-0b4d2cd9dfa7</authToken>
+						 <authToken>6f028973-4bb1-431c-a18e-65d815375994</authToken>
 						<!-- <connectedAppClientId>cd4d608addb24fbfa7222506692331f7</connectedAppClientId>
 						<connectedAppClientSecret>9023010c7D254d7098cfB25fAb1848D5</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
