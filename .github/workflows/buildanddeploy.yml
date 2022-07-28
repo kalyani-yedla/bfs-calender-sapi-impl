@@ -77,6 +77,9 @@ jobs:
       run: |
         artifactName=$(ls *.jar | head -1)
         echo $artifactName
-        mvn clean package deploy -DmuleDeploy \
-         -DskipTests
+        mvn deploy -DmuleDeploy \
+         -Dmule.artifact=$artifactName \
+         -Danypoint.username="$USERNAME" \
+         -Danypoint.password="$PASSWORD" \
+         -DskipTests 
          
