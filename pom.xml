@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
@@ -20,18 +18,18 @@
 
 	<build>
 		<plugins>
-		<!--	<plugin>
+			<!--	<plugin>
 				<groupId>org.apache.maven.plugins.maven-deploy-plugin</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
 			</plugin> -->
-			<plugin>
+			<!-- <plugin>
 
-        <groupId>org.apache.maven.plugins</groupId>
+				<groupId>org.apache.maven.plugins</groupId>
 
-        <artifactId>maven-deploy-plugin</artifactId>
+				<artifactId>maven-deploy-plugin</artifactId>
 
-      </plugin>
+			</plugin> -->
 			<!-- <plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -44,7 +42,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.4.2</version>
+				<version>3.5.4</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
@@ -56,13 +54,15 @@
 						<region>us-east-2</region>
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
-						 <authToken>6f028973-4bb1-431c-a18e-65d815375994</authToken>
+						<authToken>6f028973-4bb1-431c-a18e-65d815375994</authToken>
+						<businessGroupId>678ee431-6155-492a-8b2f-f3445e261724</businessGroupId>
 						<!-- <connectedAppClientId>cd4d608addb24fbfa7222506692331f7</connectedAppClientId>
 						<connectedAppClientSecret>9023010c7D254d7098cfB25fAb1848D5</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
  -->
 					</cloudHubDeployment>
 
+					<classifier>mule-application</classifier>
 				</configuration>
 
 			</plugin>
@@ -113,29 +113,28 @@
 	</repositories>
 
 	<pluginRepositories>
-        <pluginRepository>
-            <id>mulesoft-releases</id>
-            <name>mulesoft release repository</name>
-            <layout>default</layout>
-            <url>https://repository.mulesoft.org/releases/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>mule-public</id>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-        </pluginRepository>
-    </pluginRepositories>
+		<pluginRepository>
+			<id>mulesoft-releases</id>
+			<name>mulesoft release repository</name>
+			<layout>default</layout>
+			<url>https://repository.mulesoft.org/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
+	</pluginRepositories>
 
-	
 	<distributionManagement>
-    <repository>
-      <id>Repository</id>
-      <name>Corporate Repository</name>
-      <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/678ee431-6155-492a-8b2f-f3445e261724/maven</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
+		<repository>
+			<id>Repository</id>
+			<name>Corporate Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/678ee431-6155-492a-8b2f-f3445e261724/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 </project>
