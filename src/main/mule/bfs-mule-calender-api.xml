@@ -130,7 +130,7 @@ output application/json
 output application/json
 ---
 {
-	"message" : "Hello World From Calendar API. Today  is:->" ++ now() as String {format: "EEEE"},
+	"message" : "Hello World From Calendar API.  Today  is:->" ++ now() as String {format: "EEEE"},
 	"timeInCST" : now() >> "CST",
 	ip: server.ip
 }]]></ee:set-payload>
